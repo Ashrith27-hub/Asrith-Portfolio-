@@ -11,18 +11,17 @@ body {
     background: #f8f9fa;
     color: #222;
 }
-<nav style="background:#222; padding:10px; text-align:center;">
-  <a href="#about" style="color:white; margin:10px;">About</a>
-  <a href="#projects" style="color:white; margin:10px;">Projects</a>
-  <a href="#research" style="color:white; margin:10px;">Research</a>
-  <a href="#experience" style="color:white; margin:10px;">Experience</a>
-  <a href="#contact" style="color:white; margin:10px;">Contact</a>
-</nav>
-<section id="about">
-<section id="projects">
-<section id="research">
-<section id="experience">
-<section id="contact">
+
+nav {
+    background: #222;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
 
 header {
     background: #111;
@@ -30,18 +29,26 @@ header {
     padding: 30px;
     text-align: center;
 }
+
 section {
     padding: 40px;
     max-width: 900px;
     margin: auto;
 }
+
 h2 {
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
 }
+
 .project {
     margin-bottom: 25px;
 }
+
+img {
+    margin: 10px 10px 10px 0;
+}
+
 .footer {
     text-align: center;
     padding: 20px;
@@ -53,13 +60,21 @@ h2 {
 
 <body>
 
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#research">Research</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <header>
 <h1>Asrith Boppudi</h1>
 <p>RF Systems | FPGA Design | Semiconductor Devices</p>
 <p>Focused on high-frequency systems and hardware implementation</p>
 </header>
 
-<section>
+<section id="about">
 <h2>About Me</h2>
 <p>
 I am an Electronics engineer with experience in RF systems, FPGA design, and semiconductor device simulation. 
@@ -67,7 +82,7 @@ My work focuses on bridging device physics, communication systems, and real-worl
 </p>
 </section>
 
-<section>
+<section id="projects">
 <h2>Projects</h2>
 
 <div class="project">
@@ -80,14 +95,16 @@ My work focuses on bridging device physics, communication systems, and real-worl
 
 <div class="project">
 <h3>5G Microstrip Patch Antenna</h3>
-<img src="Patch antenna design.jpeg" width="400"><br><br>
-<img src="Vswr1.jpeg" width="400"><br><br>
-<img src="antenna 1.jpeg" width="400">
+
+<img src="Patch antenna design.jpeg" width="300">
+<img src="Vswr1.jpeg" width="300">
+<img src="antenna 1.jpeg" width="300">
+
 <p><b>Tools:</b> CST / HFSS</p>
 <p><b>Description:</b> Designed and simulated a 5G antenna.</p>
 <p><b>Key Work:</b> Gain and bandwidth optimization.</p>
 <p><b>Outcome:</b> Improved radiation performance.</p>
-<p><b>Key Contribution:</b> Designed and validated the system independently, focusing on performance optimization and real-world constraints.</p>
+<p><b>Key Contribution:</b> Designed and validated the system independently.</p>
 </div>
 
 <div class="project">
@@ -100,7 +117,7 @@ My work focuses on bridging device physics, communication systems, and real-worl
 
 </section>
 
-<section>
+<section id="research">
 <h2>Research Interests</h2>
 <ul>
 <li>RFIC and High-Frequency Systems</li>
@@ -110,7 +127,7 @@ My work focuses on bridging device physics, communication systems, and real-worl
 </ul>
 </section>
 
-<section>
+<section id="experience">
 <h2>Experience</h2>
 <p>
 Electronic System Design Engineer – Resolute Lab India<br>
@@ -130,11 +147,9 @@ Worked on aerospace-grade hardware, mixed-signal PCB design, and communication p
 
 <section>
 <h2>Certifications & Achievements</h2>
-
-<p><a href="ISWDP_Samsung.pdf" target="_blank">Samsung ISWDP Training Certificate</a></p>
-<p><a href="Graphene certificate.pdf" target="_blank">Graphene Technology Certification</a></p>
-<p><a href="NPTEL_Certificates.pdf" target="_blank">NPTEL Coursework Certification</a></p>
-
+<p><a href="ISWDP_Samsung.pdf" target="_blank">Samsung ISWDP Certificate</a></p>
+<p><a href="Graphene certificate.pdf" target="_blank">Graphene Certification</a></p>
+<p><a href="NPTEL_Certificates.pdf" target="_blank">NPTEL Certification</a></p>
 </section>
 
 <section>
@@ -142,13 +157,12 @@ Worked on aerospace-grade hardware, mixed-signal PCB design, and communication p
 <p><a href="Asrith_CV.pdf" target="_blank">Download CV</a></p>
 </section>
 
-<section>
+<section id="contact">
 <h2>Contact</h2>
 <p>Email: asrithboppudi@gmail.com</p>
-<p>LinkedIn: https://www.linkedin.com/in/ashrith-boppudi-541b181ba/</p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/ashrith-boppudi-541b181ba/" target="_blank">Profile</a></p>
 </section>
 
-</div>
 <section>
 <h2>Career Goal</h2>
 <p>
@@ -158,6 +172,7 @@ I aim to specialize in RF systems and semiconductor device engineering, contribu
 
 <div class="footer">
 <p>© 2026 Asrith Boppudi</p>
+</div>
 
 </body>
 </html>
