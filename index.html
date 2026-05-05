@@ -6,58 +6,96 @@
 
 <style>
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background: #f8f9fa;
+    background: #f5f7fa;
     color: #222;
+    line-height: 1.6;
 }
 
+/* NAV */
 nav {
-    background: #222;
-    padding: 10px;
+    background: #0f172a;
+    padding: 12px;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 nav a {
-    color: white;
-    margin: 10px;
+    color: #e2e8f0;
+    margin: 0 12px;
     text-decoration: none;
+    font-weight: 500;
+}
+nav a:hover {
+    color: #38bdf8;
 }
 
+/* HEADER */
 header {
-    background: #111;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
     color: white;
-    padding: 30px;
+    padding: 50px 20px;
     text-align: center;
 }
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+header p {
+    margin: 8px 0;
+    color: #cbd5f5;
+}
 
+/* SECTIONS */
 section {
-    padding: 40px;
+    padding: 40px 20px;
     max-width: 900px;
-    margin: auto;
+    margin: 30px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
+/* HEADINGS */
 h2 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+    margin-bottom: 20px;
 }
 
+/* PROJECT CARDS */
 .project {
-    margin-bottom: 25px;
+    background: #f9fafb;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+.project:hover {
+    transform: translateY(-3px);
 }
 
+/* IMAGES */
 img {
     margin: 10px 10px 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
 }
-<section>
-<h2>Availability</h2>
-<p>
-Open to research collaboration and graduate studies in RF systems, semiconductor devices, and advanced hardware design.
-</p>
-</section>
+
+/* LINKS */
+a {
+    color: #2563eb;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
 .footer {
     text-align: center;
     padding: 20px;
-    background: #111;
+    background: #0f172a;
     color: white;
 }
 </style>
